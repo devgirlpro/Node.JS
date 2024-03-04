@@ -1,12 +1,12 @@
 (function (message) {
-    const superHero = 'Batman';
-    console.log(message, superHero)
-})('Hello');
-
-(function (message) {
-    const superHero = 'Superman';
-    console.log(message, superHero)
-})('Goodbye');
+    const superHero = "Batman";
+    console.log(message, superHero);
+  })("Hello");
+  
+  (function (message) {
+    const superHero = "Superman";
+    console.log(message, superHero);
+  })("Hey");
 
 //every module in node.js gets wrapped in an IIFE before being loaded
 
