@@ -2,5 +2,7 @@
 
 console.log("Hi from index.js");
 
-const sum = add(5, 3)
-console.log("sum from index.js", sum)
+const sum1 = add(5, 3)
+const sum2 = add(5, 5)
+console.log("sum1 from index.js", sum1)
+console.log("sum2 from index.js", sum2)
