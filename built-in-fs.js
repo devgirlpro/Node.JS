@@ -19,3 +19,26 @@ fs.readFile("./file.txt", "utf-8", (error, data) => {
 })
 
 console.log("thired")
+
+
+//synchronously write in a file
+fs.writeFileSync("./great.txt", "Hello World!")
+
+//asynchronously write in a file
+// fs.writeFile("./great.txt", "Hello again", (err) => {
+//     if(err) {
+//         console.log(err)
+//     } else {
+//         console.log("File written")
+//     }
+// })
+
+
+//add { flag: "a" } to nor rewrite the previeus text
+fs.writeFile("./great.txt", " Hello again", { flag: "a" }, (err) => {
+    if(err) {
+        console.log(err)
+    } else {
+        console.log("File written")
+    }
+})
